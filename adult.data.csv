@@ -1,0 +1,5 @@
+higher_education = df[df['education'].isin(['Bachelors', 'Masters', 'Doctorate'])]
+
+higher_education_rich = higher_education[higher_education['salary'] == '>50K']
+
+percentage = len(higher_education_rich) / len(higher_education) * 100
